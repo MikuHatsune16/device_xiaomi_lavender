@@ -30,3 +30,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V11.0.5.0.PFGMIXM release-keys"
 
 BUILD_FINGERPRINT :="google/raven/raven:12/SP2A.220505.002/8353555:user/release-keys"
+
+# Gapps
+ifeq ($(GAPPS_BUILD),true)
+    $(call inherit-product-if-exists, vendor/google/gms/config.mk)
+    $(call inherit-product-if-exists, vendor/google/pixel/config.mk)
+endif
