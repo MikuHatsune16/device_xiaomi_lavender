@@ -148,9 +148,6 @@ ro.vendor.use_data_netmgrd=true
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # RIL
 persist.vendor.backup.ntpServer=0.pool.ntp.org
 persist.dbg.volte_avail_ovr=1
