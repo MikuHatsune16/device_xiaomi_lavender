@@ -17,8 +17,9 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pe
+    $(LOCAL_PATH)/overlay-pe \
     $(LOCAL_PATH)/overlay-derp
+
 # Display Device Config
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/configs/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
